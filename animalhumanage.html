@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="description" content="Convert animal ages to human years for dogs, cats, rabbits, and more. Easy-to-use Animal-to-Human Age Converter.">
+    <meta name="keywords" content="animal age converter, dog age to human, cat age calculator, pet age conversion, AnimalHumanAge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Animal Human Age</title>
+</head>
+<body>
+    <h1>Animal Human Age Calculator</h1>
+    <div>
+        <label for="animal">Select Animal:</label>
+        <select id="animal">
+            <option value = "dog">Dog</option>
+            <option value = "cat">Cat</option>
+            <option value = "goldfish">Goldfish</option>
+            <option value = "parakeet">Parakeet</option>
+            <option value = "canary">Canary</option>
+            <option value = "cockatiel">Cockatiel</option>
+            <option value = "rabbit">Rabbit</option>
+            <option value = "hamster">Hamster</option>
+            <option value = "gp">Guinea Pig</option>
+            <option value = "turtle">Turtle</option>
+            <option value = "bf">Betta Fish</option>
+            <option value = "angelfish">Angelfish</option>
+            <option value = "cockatoo">Cockatoo</option>
+            <option value = "macaw">Macaw</option>
+            <option value = "lovebird">Lovebird</option>
+            <option value = "chinchilla">Chinchilla</option>
+            <option value = "ferret">Ferret</option>
+            <option value = "gerbil">Gerbil</option>
+            <option value = "mouse">Mouse</option>
+            <option value = "rat">Rat</option>
+            <option value = "lg">Leopard Gecko</option>
+            <option value = "bd">Bearded Dragon</option>
+            <option value = "cs">Corn Snake</option>
+            <option value = "bp">Ball Python</option>
+            <option value = "tortoise">Tortoise</option>
+            <option value = "frog">Frog</option>
+            <option value = "salamander">Salamander</option>
+            <option value = "hc">Hermit Crab</option>
+            <option value = "sg">Sugar Glider</option>
+            <option value = "hedgehog">Hedgehog</option>
+            <option value = "axolotl">Axolotl</option>
+            <option value = "kf">Koi Fish</option>
+            <option value = "sff">Siamese Fighting Fish</option>
+            <option value = "agp">African Grey Parrot</option>
+            <option value = "ap">Amazon Parrot</option>
+            <option value = "conure">Conure</option>
+            <option value = "finch">Finch</option>
+            <option value = "cd">Canarywing Dove</option>
+            <option value = "pigeon">Pigeon</option>
+            <option value = "budgerigar">Budgerigar</option>
+            <option value = "cockroach">Cockroach</option>
+            <option value = "tarantula">Tarantula</option>
+            <option value = "scorpion">Scorpion</option>
+            <option value = "iguana">Iguana</option>
+            <option value = "gecko">Gecko</option>
+            <option value = "si">Stick Insect</option>
+            <option value = "pm">Praying Mantis</option>
+        </select>
+
+        <br>
+
+        <h3>Animal Age</h3>
+
+        <div class="age-inputs">
+            <label for="years">Years:</label>
+            <input type="number" id="years" min="0" max="10000" value = "0">
+
+            <label for="months">Months:</label>
+            <input type="number" id="months" min="0" max="11" value = "0">
+
+            <label for="days">Days:</label>
+            <input type="number" id="days" min="0" max="30" value = "0">
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+    <div>
+        <button id = "calcBtn">Calculate Human Age</button>
+    </div>
+    <div id="resultBox">
+        <p id="resultText">Your result will appear here.</p>
+    </div>
+
+
+
+    <script>
+        const yearsInput = document.getElementById("years");
+
+        yearsInput.addEventListener("focus", function() 
+        {
+            this.select();
+        });
+
+        const monthsInput = document.getElementById("months");
+
+        monthsInput.addEventListener("focus", function() 
+        {
+            this.select();
+        });
+
+        const daysInput = document.getElementById("days");
+
+        daysInput.addEventListener("focus", function() 
+        {
+            this.select();
+        });
+    </script>
+    <script src = "index.js"></script>
+
+</body>
+</html>
