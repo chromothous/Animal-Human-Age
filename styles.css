@@ -1,0 +1,109 @@
+body
+{
+    background-color: #e6f2ea;
+    text-align: center;
+}
+
+button
+{
+    background-color: rgb(45, 126, 59);
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover 
+{
+    background-color: #33ff8b;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+button:active 
+{
+    background-color: #00cc3d;
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+select 
+{
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+select:hover 
+{
+    border-color: #999;
+    background-color: #e0f7fa;
+}
+
+
+select:focus 
+{
+    outline: none;
+    border-color: #66b2ff;
+    box-shadow: 0 0 5px rgba(102, 178, 255, 0.5);
+}
+
+#resultBox 
+{
+    margin-top: 25px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+#resultBox.flash 
+{
+    background-color: #d1ffd6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+#resultText 
+{
+    margin: 0;
+}
+
+input 
+{
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus 
+{
+  outline: none; 
+  border: 2px solid #4CAF50;
+  box-shadow: 0 0 8px #4CAF50;
+}
+
